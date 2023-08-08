@@ -159,6 +159,32 @@ h2 {
   margin: 0;
 }
 
+.cwheader{
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 150px;
+  z-index: 1;
+  background-color: #000000;
+  text-align: center;
+}
+
+.cwheader h1{
+  font-size: 42px;
+  margin-top: 10px;
+}
+
+
+.dp2{
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  position: absolute;
+  left: 50px;
+  top: 20px;
+}
+
 
 .split {
   height: 100%;
@@ -168,6 +194,7 @@ h2 {
   top: 0;
   padding-top: 20px;
   overflow-y: scroll; /* Enable vertical scroll */
+  margin-top: 150px;
 }
 
 .left {
