@@ -7,11 +7,7 @@
   <link rel="icon" type="image/x-icon" href="Untitled.png">
 
 </head>
-<body>
-  <div class="cwheader">
-    <h1>Class Work</h1>
-    <img src="Untitled.png" class="dp">
-  </div>
+<body class="bodycw">
   <div class="split left">
     <div class="centered">
       <img src="dharma_kannan.jpg" alt="Avatar woman">
@@ -71,5 +67,35 @@
         fight I wouldn't lose to anyone.</p>
     </div>
   </div>
+  <div class="cwheader">
+    <h1>Class Work</h1>
+    <a href="index.html" class="assignment-link" data-audio="audio3"><img src="Untitled.png" class="dp2"></a>
+    <h1 class="name">Shiva Bheri</h1>
+  </div>
+  <audio id="audio3" src="augh.mp3"></audio>
 </body>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+  const assignmentLinks = document.querySelectorAll(".assignment-link");
+  assignmentLinks.forEach(link => {
+      link.addEventListener("mouseenter", () => {
+          const audioId = link.getAttribute("data-audio");
+          const audioElement = document.getElementById(audioId);
+          if (audioElement) {
+              audioElement.play();
+          }
+      });
+      link.addEventListener("mouseleave", () => {
+          const audioId = link.getAttribute("data-audio");
+          const audioElement = document.getElementById(audioId);
+          if (audioElement) {
+              audioElement.pause();
+              audioElement.currentTime = 0; // Reset audio to start
+          }
+      });
+  });
+});
+
+</script>  
 </html>
