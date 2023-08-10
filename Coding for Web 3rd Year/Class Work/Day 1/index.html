@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+  <title>Class Work</title>
+  <link rel="icon" type="image/x-icon" href="/assets/Untitled.png">
+
+</head>
+<body class="bodycw">
+  <div class="split left">
+    <div class="centered">
+      <img src="/assets/dharma_kannan.jpg" alt="Avatar woman">
+      <h3 class="a1h">Dharma</h3>
+      <p>My name is Dharma Kannan. I'm 63 years old.
+        My house is in the northeast section of Morioh,
+        where all the villas are, and I am not married.
+        I work as an employee for the Kame Yu department 
+        stores, and I get home every day by 8 PM at 
+        the latest. I don't smoke, but I occasionally
+        drink. I'm in bed by 11 PM, and make sure I 
+        get eight hours of sleep, no matter what. 
+        After having a glass of warm milk and doing
+        about twenty minutes of stretches before
+        going to bed, I usually have no problems
+        sleeping until morning. Just like a baby, 
+        I wake up without any fatigue or stress 
+        in the morning. I was told there were no 
+        issues at my last check-up. I'm trying 
+        to explain that I'm a person who wishes 
+        to live a very quiet life. I take care 
+        not to trouble myself with any enemies, 
+        like winning and losing, that would cause 
+        me to lose sleep at night. That is how I 
+        deal with society, and I know that is what 
+        brings me happiness. Although, if I were to 
+        fight I wouldn't lose to anyone.</p>
+    </div>
+  </div>
+
+  <div class="split right">
+    <div class="centered">
+      <img src="/assets/ramesh.jpg" alt="Avatar man">
+      <h3 class="a1h">Ramesh</h3>
+      <p>My name is Ramesh. I'm 56 years old.
+        My house is in the northeast section of Morioh,
+        where all the villas are, and I am not married.
+        I work as an employee for the Kame Yu department 
+        stores, and I get home every day by 8 PM at 
+        the latest. I don't smoke, but I occasionally
+        drink. I'm in bed by 11 PM, and make sure I 
+        get eight hours of sleep, no matter what. 
+        After having a glass of warm milk and doing
+        about twenty minutes of stretches before
+        going to bed, I usually have no problems
+        sleeping until morning. Just like a baby, 
+        I wake up without any fatigue or stress 
+        in the morning. I was told there were no 
+        issues at my last check-up. I'm trying 
+        to explain that I'm a person who wishes 
+        to live a very quiet life. I take care 
+        not to trouble myself with any enemies, 
+        like winning and losing, that would cause 
+        me to lose sleep at night. That is how I 
+        deal with society, and I know that is what 
+        brings me happiness. Although, if I were to 
+        fight I wouldn't lose to anyone.</p>
+    </div>
+  </div>
+  <div class="cwheader">
+    <h1>Class Work</h1>
+    <a href="/index.html" class="assignment-link" data-audio="audio3"><img src="/assets/Untitled.png" class="dp2"></a>
+    <h1 class="name">Shiva Bheri</h1>
+  </div>
+  <audio id="audio3" src="/Sounds/augh.mp3"></audio>
+</body>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+  const assignmentLinks = document.querySelectorAll(".assignment-link");
+  assignmentLinks.forEach(link => {
+      link.addEventListener("mouseenter", () => {
+          const audioId = link.getAttribute("data-audio");
+          const audioElement = document.getElementById(audioId);
+          if (audioElement) {
+              audioElement.play();
+          }
+      });
+      link.addEventListener("mouseleave", () => {
+          const audioId = link.getAttribute("data-audio");
+          const audioElement = document.getElementById(audioId);
+          if (audioElement) {
+              audioElement.pause();
+              audioElement.currentTime = 0; // Reset audio to start
+          }
+      });
+  });
+});
+
+</script>  
+</html>
