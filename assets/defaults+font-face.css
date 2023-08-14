@@ -47,6 +47,18 @@
     font-weight: normal;
 }
 
+@font-face {
+  font-family: 'spagro';
+  src: url('spacegrotesk-medium-webfont.eot');
+  src: url('spacegrotesk-medium-webfont.eot?#iefix') format('embedded-opentype'),
+       url('spacegrotesk-medium-webfont.woff2') format('woff2'),
+       url('spacegrotesk-medium-webfont.woff') format('woff'),
+       url('spacegrotesk-medium-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
 
 /* CSS RESETS */
 /* ----------------------------------------------------- */
@@ -87,7 +99,7 @@ h1,h2,h3,h4 {
 /* ----------------------------------------------------- */
 
 html {
-    font-family: 'FT88', monospace;
+    font-family: 'spagro';
     letter-spacing: -0.05rem;
     font-size: 18px;
 }
