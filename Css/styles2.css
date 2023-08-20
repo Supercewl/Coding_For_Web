@@ -1,47 +1,33 @@
-body {
-    font-family: Arial, sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Space+Grotesk:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
     margin: 0;
-    padding: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth; 
+}
+
+body{
     min-height: 100vh;
-    background-color: #f0f0f0;
+    background: linear-gradient(#2b1055, #7597de);
+    overflow-x: hidden;
 }
 
-.button-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 150px;
-    max-width: 100%;
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    margin: 50px;
-    margin-top: 150px;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;;
 }
 
-.button {
-    background-color: #070707;
-    height: 105px; 
-    width: 250px; 
-    border: 3px solid black;
-    border-radius: 10px;
-    text-align: center;
-    cursor: pointer;
-    font-size: 40px;
-    font-family: 'Space Grotesk', sans-serif;
-    transition: .5s ease;
-}
 
-.button a{
-    text-decoration: none;
-    color: white;
-}
-
-.button:hover {
-    background-color: #e4e4e4;
-    color: #020202;
-}
 
 .dp2{
     height: 100px;
@@ -49,19 +35,253 @@ body {
     border-radius: 50%;
     position: absolute;
     left: 50px;
-    top: 20px;
+    top: 40px;
+    box-shadow: 0px 0px 15px 5px #fd3a59;
+    animation: glitch 5s steps(100) infinite;
+  }
+  
+
+header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-header{
-    width: 100%;
-    top: 0;
+header ul li{
+    list-style: none;
+    padding: 0px 20px;
+}
+
+header ul li a{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #fff;
+}
+
+header ul li a:hover, .active{
+    background: #fff;
+    color: #020202;
+}
+
+.dropdown-content {
+    display: none;
     position: absolute;
-    height: 150px;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
-    background-color: #000000;
-    text-align: center;
+    justify-content: center;
+  }
+
+header ul li:hover .dropdown-content {
+    align-items: center;
+    display: block;
+    justify-content: center;
+    width: 100px;
+}
+  
+.dropdown-content a{
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    border-bottom: 1px solid black;
+    color: #020202;
 }
 
-header h1{
-    color: aliceblue;
+.dropdown-content a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    border-bottom: 1px solid black;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+
+section{
+    position: relative;
+    width: 100%;
+    height: 3000px;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+section::before{
+    content:'';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, black, #ffffff00);
+    z-index: 1000;
+}
+
+section img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+section img#moon{
+    mix-blend-mode: screen;
+    z-index: 9;
+}
+
+section img#mountains_behind{
+    z-index: 9;
+}
+
+section img#mountains_front{
+    z-index:10;
+}
+
+#text{
+    position: absolute;
+    color: #fff;
+    white-space: nowrap;
+    font-weight: 700;
+    font-size: 7.5vw;
+    z-index: 8;
+    pointer-events: none;
+    margin: 0px;
+    top: 120px;
+    background-color: #020202;
+    padding: 20px;
+    border: 1px solid rgb(248, 44, 44);
+    box-shadow: 0px 0px 15px 5px #fd3a59;
+    animation: glitch 5s steps(100) infinite;
+}
+
+
+.sec{
+    position: relative;
+    padding: 100px;
+    background: black;
+    z-index: 10;
+}
+
+.sec h2{
+    font-size: 3.5em;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.sec p{
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.buttons-container {
+    display: grid;
+    position: absolute;
+    top: 30%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn {
+    text-decoration: none;
+    border: 1px solid #fd3a59;
+    position: relative;
+    overflow: hidden;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    align-items: center;
+    text-align: center;
+    padding: 1rem 2rem;
+    color: #f4f4f4;
+    text-transform: uppercase;
+    text-decoration: none;
+    width: 200px;
+    margin-top: 50px;
+    background-color: #0202026c;
+    box-shadow: inset 0px 0px 15px 10px #fd3a59;
+  }
+  
+  .btn:hover {
+    box-shadow: 0px 0px 15px 5px #fd3a59;
+    background-color: #020202;
+  }
+  
+  .btn:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      120deg,
+      transparent,
+      #fd3a59,
+      transparent
+    );
+    transition: all 650ms;
+}
+
+.btn:hover:before {
+  left: 100%;
+}
+
+
+@keyframes glitch {
+    0% {text-shadow: 1px 0 0 #fd3a59, -1px 0 0 #2be4ea;}
+    4% {text-shadow: 1px 0 0 #fd3a59, -1px 0 0 #2be4ea;}
+    5% {text-shadow: -1px 0 0 #fd3a59, 1px 0 0 #2be4ea;}
+    10% {text-shadow: -1px 0 0 #fd3a59, 1px 0 0 #2be4ea;}
+    11% {text-shadow: 0.5px 0 0 #fd3a59, -0.5px 0 0 #191A1E;}
+    15% {text-shadow: 0.5px 0 0 #fd3a59, -0.5px 0 0 #191A1E;}
+    16% {text-shadow: -1px 0 0 #fd3a59, 1px 0 0 #191A1E;}
+    20% {text-shadow: -1px 0 0 #fd3a59, 1px 0 0 #191A1E;}
+    21% {text-shadow: 0.7px 0 0 #2be4ea, -0.7px 0 0 #191A1E;}
+    30% {text-shadow: 0.7px 0 0 #2be4ea, -0.7px 0 0 #191A1E;}
+    31% {text-shadow: -1px 0 0 #2be4ea, 1px 0 0 #191A1E;}
+    40% {text-shadow: -1px 0 0 #2be4ea, 1px 0 0 #191A1E;}
+    41% {text-shadow: 50px 0 0 #2be4ea, -50px 0 0 #191A1E;}
+    42% {text-shadow: 0 0 0 #2be4ea, 0 0 0 #191A1E;}
+    43% {text-shadow: 0.5px 0 0 #fd3a59, -0.5px 0 0 #191A1E;}
+    46% {text-shadow: 0.5px 0 0 #fd3a59, -0.5px 0 0 #191A1E;}
+    47% {text-shadow: -1px 0 0 #fd3a59, 1px 0 0 #191A1E;}
+    50% {text-shadow: -1px 0 0 #fd3a59, 1px 0 0 #191A1E;}
+    51% {text-shadow: 1px 0 0 #fd3a59, -1px 0 0 #2be4ea;}
+    55% {text-shadow: 1px 0 0 #fd3a59, -1px 0 0 #2be4ea;}
+    56% {text-shadow: -1px 0 0 #fd3a59, 1px 0 0 #2be4ea;}
+    60% {text-shadow: -1px 0 0 #fd3a59, 1px 0 0 #2be4ea;}
+    61% {text-shadow: 30px 0 0 #fd3a59, -30px 0 0 #191A1E;}
+    62% {text-shadow: 0 0 0 #fd3a59, 0 0 0 #191A1E;}
+    63% {text-shadow: 0.5px 0 0 #fd3a59, -0.5px 0 0 #2be4ea;}
+    66% {text-shadow: 0.5px 0 0 #fd3a59, -0.5px 0 0 #2be4ea;}
+    67% {text-shadow: -1px 0 0 #fd3a59, 1px 0 0 #2be4ea;}
+    70% {text-shadow: -1px 0 0 #fd3a59, 1px 0 0 #2be4ea;}
+    71% {text-shadow: 70px 0 0 #fd3a59, -70px 0 0 #2be4ea;}
+    72% {text-shadow: 0 0 0 #fd3a59, 0 0 0 #2be4ea;}
+    73% {text-shadow: 1px 0 0 #fd3a59, -1px 0 0 #2be4ea;}
+    76% {text-shadow: 1px 0 0 #fd3a59, -1px 0 0 #2be4ea;}
+    77% {text-shadow: -1px 0 0 #fd3a59, 1px 0 0 #2be4ea;}
+    80% {text-shadow: -1px 0 0 #fd3a59, 1px 0 0 #2be4ea;}
+    81% {text-shadow: 0.5px 0 0 #fd3a59, -0.5px 0 0 #191A1E;}
+    85% {text-shadow: 0.5px 0 0 #fd3a59, -0.5px 0 0 #191A1E;}
+    86% {text-shadow: -1px 0 0 #fd3a59, 1px 0 0 #191A1E;}
+    90% {text-shadow: -1px 0 0 #fd3a59, 1px 0 0 #191A1E;}
+    91% {text-shadow: 60px 0 0 #191A1E, -60px 0 0 #2be4ea;}
+    92% {text-shadow: 0 0 0 #191A1E, 0 0 0 #2be4ea;}
+    92% {text-shadow: 0.7px 0 0 #2be4ea, -0.7px 0 0 #191A1E;}
+    95% {text-shadow: 0.7px 0 0 #2be4ea, -0.7px 0 0 #191A1E;}
+    96% {text-shadow: -1px 0 0 #2be4ea, 1px 0 0 #191A1E;}
+    99% {text-shadow: -1px 0 0 #2be4ea, 1px 0 0 #191A1E;}
+    100% {text-shadow: -1px 0 0 #2be4ea, 1px 0 0 #191A1E;}
 }
