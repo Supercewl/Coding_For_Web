@@ -1,0 +1,344 @@
+/* BODY AND SECTIONS */
+/* ----------------------------------------------------- */
+/* All body and section styling available here (except for the fonts, which are declared in the defaults+fonts.css). Some properties have already been declared */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Space+Grotesk:wght@500&display=swap');
+
+body {
+  padding: 40px 10%;
+  background-color: rgb(235, 235, 235) ;  
+  font-family: 'Poppins', sans-serif;
+}
+
+section {
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: white;
+}
+
+section > h2 {
+text-align: center;
+line-height: 1;
+border-bottom: 1px solid black;
+padding-bottom: 8px;
+}
+
+section > em {
+display: block;
+margin: 8px 0;
+text-align: center;
+}
+
+section > div {padding: 10px;}
+
+
+#s6 > div {background-color: #B298DC;}
+#s7 > div {background-color: #BDC696;}
+
+
+
+/* SECTION 1 */
+/* ----------------------------------------------------- */
+#s1 > div > p {
+  margin: 0;
+}
+
+#s1 > div {
+  background:linear-gradient(blue,purple,violet) ;
+  color: #B8F3FF;
+  column-count: 3;
+  font-size: 20px;
+}
+  
+
+/* SECTION 2 */
+/* ----------------------------------------------------- */
+:root{
+  --DivHeight:70vh;
+}
+
+
+#s2 > div {
+  background-color: #CDEAC0;
+  height: var(--DivHeight);
+}
+
+#s2 > div > div {
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid black;
+}
+
+#s2 > div div:nth-of-type(1){
+  height: 40px;
+  color: rgb(211, 211, 211);
+  background-color: #161616;
+}
+
+#s2 > div div:nth-of-type(2){
+  height: calc(100% - 80px);
+  color: rgb(255, 254, 254);
+  background-color: #727272;
+}
+
+
+/* SECTION 3 */
+/* ----------------------------------------------------- */
+
+#s3 > div {
+  background-color: #FF5964;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+#s3 > div > div {
+  width: 400px;
+  background-color: white;
+  margin: 5px;
+  padding: 10px;
+}
+
+
+
+/* SECTION 4 */
+/* ----------------------------------------------------- */
+
+#s4 > div {
+  background-color: #1a1a1a;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0px;
+  padding: 0px;
+  border: 10px solid rgb(5, 5, 5);
+}
+
+#s4 > div > div {
+  height: 100%;
+  width: 32.5%;
+  background-color: rgb(114, 2, 165);
+  color: #be9bf7;
+  padding: 10px;
+  border: 1px solid rgb(0, 153, 255);
+}
+
+
+
+/* SECTION 5 */
+/* ----------------------------------------------------- */
+
+#s5 > div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#s5 > div > span {
+  background-color: #B298DC;
+  padding: 10px;
+  margin: 10px;
+}
+
+#s5 > button {
+  padding: 10px;
+  background-color: #BDC696;
+  font-family: 'FT88', monospace;
+  margin: 10px;
+  display: none;
+  border-radius: 5px;
+}
+
+#s5 #box {
+ background-color: #B8F3FF;
+ padding: 10px;
+ visibility: hidden;
+ width: 120px;
+}
+
+#s5 #box > ul {
+  margin: 0;
+  padding: 10px;
+} 
+
+
+@media screen and (max-width: 1024px) {
+
+body{
+  font-family: 'Space Grotesk', sans-serif;
+}  
+
+  /* SECTION 1 */
+/* ----------------------------------------------------- */
+#s1 > div > p {
+  margin: 0;
+}
+
+#s1 > div {
+  background:linear-gradient(lightgoldenrodyellow,rgb(224, 153, 19),rgb(236, 134, 228)) ;
+  color: #161616;
+  column-count: 2;
+  font-size: 16px;
+}
+
+
+
+  /* SECTION 2 */
+/* ----------------------------------------------------- */
+#s2 > div {
+  font-size: 16px;
+}
+
+#s2 > div div:nth-of-type(1){
+  height: 50px;
+  color: rgb(17, 17, 17);
+  background-color: #c5c5c5;
+}
+
+#s2 > div div:nth-of-type(2){
+  height: calc(100% - 90px);
+  color: rgb(231, 231, 231);
+  background-color: #800404;
+}
+
+/* SECTION 3 */
+/* ----------------------------------------------------- */
+
+#s3 > div {
+  background-color: #0c0c0c;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+#s3 > div > div {
+  width: calc(50% - 10px);
+  background-color: rgb(23, 11, 58);
+  margin: 5px;
+  padding: 10px;
+  color: #B298DC;
+}
+
+/* SECTION 4 */
+/* ----------------------------------------------------- */
+
+#s4 > div {
+  background-color: #1a1a1a;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#s4 > div > div {
+  background-color: rgb(37, 61, 21);
+  color: #49bb52;
+  padding: 10px;
+  border: 1px solid rgb(135, 219, 39);
+  width: 32.5%;
+}
+
+
+
+}
+
+@media screen and (max-width:600px){
+    /* SECTION 1 */
+/* ----------------------------------------------------- */
+
+
+#s1 > div {
+  background:linear-gradient(rgb(0, 238, 255),rgb(11, 167, 89),rgb(46, 226, 29)) ;
+  color: #000000;
+  column-count: 1;
+  font-size: 14px;
+}
+
+  /* SECTION 2 */
+/* ----------------------------------------------------- */
+#s2 > div {
+  font-size: 14px;
+}
+
+#s2 > div div:nth-of-type(1){
+  height: 60px;
+  color: rgb(3, 217, 255);
+  background-color: #0d1738;
+}
+
+#s2 > div div:nth-of-type(2){
+  height: calc(100% - 100px);
+  color: rgb(235, 205, 250);
+  background-color: #9c3f90;
+}
+
+/* SECTION 3 */
+/* ----------------------------------------------------- */
+
+#s3 > div {
+  background-color: #ff9100;
+  flex-direction: column;
+}
+
+#s3 > div > div {
+  width: 100%;
+  background-color: rgb(53, 115, 248);
+  margin: 5px 0px;
+  padding: 10px;
+  color: #c2dc98;
+}
+
+
+/* SECTION 4 */
+/* ----------------------------------------------------- */
+
+#s4 > div {
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: auto;
+}
+
+#s4 > div > div {
+  background-color: rgb(221, 35, 3);
+  color: #d0df09;
+  width: 100%;
+  height: fit-content;
+}
+
+
+/* SECTION 5 */
+/* ----------------------------------------------------- */
+#s5 > div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  visibility: hidden;
+}
+
+#s5 > div > span {
+  background-color: #B298DC;
+  padding: 10px;
+  margin: 10px;
+}
+
+#s5 > button {
+  padding: 10px;
+  background-color: #BDC696;
+  font-family: 'FT88', monospace;
+  margin: auto;
+  display: block;
+}
+
+#s5 #box {
+ background-color: #667072;
+ padding: 10px;
+ visibility: visible;
+ width: 120px;
+ margin: auto;
+ margin-top: 20px;
+}
+
+#s5 #box > ul {
+  margin: 0;
+  padding: 10px;
+} 
+}
