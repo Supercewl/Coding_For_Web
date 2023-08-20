@@ -10,27 +10,100 @@
 </head>
 <body>
     <header>
-        <h1>Class Works</h1>
         <a href="index.html" class="assignment-link" data-audio="audio3"><img src="assets/Untitled.png" class="dp2"></a>
-        <h1 class="name">Shiva Bheri</h1>
-        <audio id="audio3" src="Sounds/augh.mp3"></audio>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li class="dropdown">
+                <a href="#Categories">Assignments</a>
+                <div class="dropdown-content">
+                  <a href="A1.html">A1</a>
+                  <a href="#Products">A2</a>
+                  <a href="#Portfolios">A3</a>
+                </div>
+            <li><a href="#" class="active">Class Work</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
     </header>
-    <div class="button-grid">
-        <button class="button"><a href="Day 1.html" class="assignment-link" data-audio="audio1">Day 1</a></button>
-        <button class="button"><a href="Day 2.html" class="assignment-link" data-audio="audio2">Day 2</a></button>
-        <button class="button"><a href="Day 3.html" class="assignment-link" data-audio="audio3">Day 3</a></button>
-        <button class="button"><a href="Day 5.html" class="assignment-link" data-audio="audio4">Day 5</a></button>
-    </div>
+   
+    <section>
+        <img src="images/Layer 4.png" id="stars">
+        <h2 id="text">Exercises</h2>
+        <img src="images/Layer 3.png" id="moon">
+        <img src="images/Layer 2.png" id="mountains_behind">
+        <div class="buttons-container">
+            <a href="Day 1.html" class="btn" id="btn1" data-audio="audio1">Exercise 1</a>
+            <a href="Day 2.html" class="btn" id="btn2" data-audio="audio2">Exercise 2</a>
+            <a href="Day 3.html" class="btn" id="btn1" data-audio="audio3">Exercise 3</a>
+            <a href="Day 5.html" class="btn" id="btn2" data-audio="audio4">Exercise 4</a>
+            <a href="Day 6.html" class="btn" id="btn1" data-audio="audio5">Exercise 5</a>
+            <a href="Day 7.html" class="btn" id="btn2" data-audio="audio6">Exercise 6</a>
+        </div>
+        <img src="images/Layer 1.png" id="mountains_front">
+        <audio id="audio1" src="Sounds/augh.mp3"></audio>
+        <audio id="audio2" src="Sounds/Arey ey Vedya.mp3"></audio>
+        <audio id="audio3" src="Sounds/Jaldi.mp3"></audio>
+        <audio id="audio4" src="Sounds/mj hehe.mp3"></audio>
+        <audio id="audio5" src="Sounds/pipi.mp3"></audio>
+        <audio id="audio6" src="Sounds/bing.mp3"></audio>
+    </section>
 
-    <audio id="audio1" src="Sounds/pipi.mp3"></audio>
-    <audio id="audio2" src="Sounds/mj hehe.mp3"></audio>
-    <audio id="audio3" src="Sounds/augh.mp3"></audio>
-    <audio id="audio4" src="Sounds/Arey ey Vedya.mp3"></audio>
+
+    <div class="sec" id="sec">
+        <h2>Exercises</h2>
+        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna
+            aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+            ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            Duis aute irure dolor in reprehenderit in voluptate velit 
+            esse cillum dolore eu fugiat nulla pariatur. Excepteur
+            sint occaecat cupidatat non proident, sunt in culpa qui 
+            officia deserunt mollit anim id est laborum. Lorem ipsum
+             dolor sit amet, consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna
+            aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+            ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            Duis aute irure dolor in reprehenderit in voluptate velit 
+            esse cillum dolore eu fugiat nulla pariatur. Excepteur
+            sint occaecat cupidatat non proident, sunt in culpa qui 
+            officia deserunt mollit anim id est laborum.<br> <br>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna
+            aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+            ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            Duis aute irure dolor in reprehenderit in voluptate velit 
+            esse cillum dolore eu fugiat nulla pariatur. Excepteur
+            sint occaecat cupidatat non proident, sunt in culpa qui 
+            officia deserunt mollit anim id est laborum. </p>
+    </div>
 </body>
+<script>
+    let stars = document.getElementById('stars');
+    let moon = document.getElementById('moon');
+    let mountains_behind = document.getElementById('mountains_behind');
+    let text = document.getElementById('text');
+    let btn = document.getElementById('btn');
+    let mountains_front = document.getElementById('mountains_front');
+    let header = document.querySelector('header');
+    let btn1 = document.getElementById('btn1');
+    let btn2 = document.getElementById('btn2');
+
+    window,addEventListener('scroll', function(){
+        let value = window.scrollY;
+        stars.style.top =  value * 0.25 + 'px';
+        moon.style.top =  value * 1.05 + 'px';
+        mountains_behind.style.top =  value * 0.5 + 'px';
+        mountains_front.style.top =  value * 0 + 'px';
+        // text.style.marginTop = value * 1.5 +'px';
+        text.style.marginLeft = value * 1.5 +'px';
+        btn.style.marginTop = value * 1.5 +'px';
+        header.style.top =  value * 0.5 + 'px';
+        btn1.style.left = value * 1.5 + 'px';
+    })
+</script>
 
 <script>
     document.addEventListener("DOMContentLoaded", function() {
-    const assignmentLinks = document.querySelectorAll(".assignment-link");
+    const assignmentLinks = document.querySelectorAll(".btn");
     assignmentLinks.forEach(link => {
         link.addEventListener("mouseenter", () => {
             const audioId = link.getAttribute("data-audio");
@@ -50,6 +123,6 @@
     });
 });
 
-</script>  
+</script>    
 
 </html>
