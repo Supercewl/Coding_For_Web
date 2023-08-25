@@ -3,7 +3,7 @@ let music_data = [
         {
           img: "/Asset/DPs/SP.jpg",
           label: "C418 - Aria Math | Synthwave",
-          audio: "https://github.com/Supercewl/Coding_For_Web/blob/main/Sounds/C418%20-%20Aria%20Math%20(Synthwave).mp3"
+          audio: "/Asset/Sounds/C418 - Aria Math (Synthwave).mp3"
         },
         {
           img: "/Asset/DPs/rey.png",
