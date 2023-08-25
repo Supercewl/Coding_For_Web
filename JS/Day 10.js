@@ -1,34 +1,34 @@
 let music_data = [
     [
         {
-          img: "/Asset/DPs/SP.jpg",
+          img: "DPs/SP.jpg",
           label: "C418 - Aria Math | Synthwave",
-          audio: "/Asset/Sounds/C418 - Aria Math (Synthwave).mp3"
+          audio: "Sounds/C418 - Aria Math (Synthwave).mp3"
         },
         {
-          img: "/Asset/DPs/rey.png",
+          img: "DPs/rey.png",
           label: "Heartbeat - Childish Gambino",
-          audio: "https://github.com/Supercewl/Coding_For_Web/blob/main/Sounds/heartbeat.mp3"
+          audio: "Sounds/heartbeat.mp3"
         },
         {
-          img: "/Asset/DPs/2.png",
+          img: "DPs/2.png",
           label: "Creep | Acoustic - Radiohead",
-          audio: "https://github.com/Supercewl/Coding_For_Web/blob/main/Sounds/Creep.mp3"
+          audio: "Sounds/Creep.mp3"
         },
         {
-          img: "/Asset/DPs/V.png",
+          img: "DPs/V.png",
           label: "BRAZILIAN DANCA PHONKA - 6NTHMANE",
-          audio: "https://github.com/Supercewl/Coding_For_Web/blob/main/Sounds/phonk.mp3"
+          audio: "Sounds/phonk.mp3"
         },
         {
-          img: "/Asset/DPs/S.png",
+          img: "DPs/S.png",
           label: "Can't Stop - Red Hot Chilli Peppers",
-          audio: "https://github.com/Supercewl/Coding_For_Web/blob/main/Sounds/rhcp.mp3"
+          audio: "Sounds/rhcp.mp3"
         },
         {
-          img: "/Asset/DPs/V2.jpg",
+          img: "DPs/V2.jpg",
           label: "Better - Khalid",
-          audio: "https://github.com/Supercewl/Coding_For_Web/blob/main/Sounds/Better.mp3"
+          audio: "Sounds/Better.mp3"
         }
       ]
 ]
