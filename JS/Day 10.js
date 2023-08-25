@@ -3,32 +3,32 @@ let music_data = [
         {
           img: "/assets/DPs/SP.jpg",
           label: "C418 - Aria Math | Synthwave",
-          audio: "/Sounds/C418 - Aria Math (Synthwave).mp3"
+          audio: "Asset/Sounds/C418 - Aria Math (Synthwave).mp3"
         },
         {
           img: "/assets/DPs/rey.png",
           label: "Heartbeat - Childish Gambino",
-          audio: "/Sounds/heartbeat.mp3"
+          audio: "Asset/Sounds/heartbeat.mp3"
         },
         {
           img: "/assets/DPs/2.png",
           label: "Creep | Acoustic - Radiohead",
-          audio: "/Sounds/Creep.mp3"
+          audio: "Asset/Sounds/Creep.mp3"
         },
         {
           img: "assets/DPs/V.png",
           label: "BRAZILIAN DANCA PHONKA - 6NTHMANE",
-          audio: "/Sounds/phonk.mp3"
+          audio: "Asset/Sounds/phonk.mp3"
         },
         {
           img: "/assets/DPs/S.png",
           label: "Can't Stop - Red Hot Chilli Peppers",
-          audio: "/Sounds/rhcp.mp3"
+          audio: "Asset/Sounds/rhcp.mp3"
         },
         {
           img: "/assets/DPs/V2.jpg",
           label: "Better - Khalid",
-          audio: "/Sounds/Better.mp3"
+          audio: "Asset/Sounds/Better.mp3"
         }
       ]
 ]
