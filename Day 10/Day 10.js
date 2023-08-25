@@ -194,3 +194,8 @@ const animatedImage = document.getElementById("animatedImage");
         }
         
         changeBoxShadowColor();
+
+function clintro() {
+    var introX = document.getElementById("introx");
+    introX.parentElement.style.display = "none";
+}
