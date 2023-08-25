@@ -3,32 +3,32 @@ let music_data = [
         {
           img: "/Asset/DPs/SP.jpg",
           label: "C418 - Aria Math | Synthwave",
-          audio: "Asset/Sounds/C418 - Aria Math (Synthwave).mp3"
+          audio: "https://github.com/Supercewl/Coding_For_Web/blob/main/Sounds/C418%20-%20Aria%20Math%20(Synthwave).mp3"
         },
         {
           img: "/Asset/DPs/rey.png",
           label: "Heartbeat - Childish Gambino",
-          audio: "Asset/Sounds/heartbeat.mp3"
+          audio: "https://github.com/Supercewl/Coding_For_Web/blob/main/Sounds/heartbeat.mp3"
         },
         {
           img: "/Asset/DPs/2.png",
           label: "Creep | Acoustic - Radiohead",
-          audio: "Asset/Sounds/Creep.mp3"
+          audio: "https://github.com/Supercewl/Coding_For_Web/blob/main/Sounds/Creep.mp3"
         },
         {
           img: "/Asset/DPs/V.png",
           label: "BRAZILIAN DANCA PHONKA - 6NTHMANE",
-          audio: "Asset/Sounds/phonk.mp3"
+          audio: "https://github.com/Supercewl/Coding_For_Web/blob/main/Sounds/phonk.mp3"
         },
         {
           img: "/Asset/DPs/S.png",
           label: "Can't Stop - Red Hot Chilli Peppers",
-          audio: "Asset/Sounds/rhcp.mp3"
+          audio: "https://github.com/Supercewl/Coding_For_Web/blob/main/Sounds/rhcp.mp3"
         },
         {
           img: "/Asset/DPs/V2.jpg",
           label: "Better - Khalid",
-          audio: "Asset/Sounds/Better.mp3"
+          audio: "https://github.com/Supercewl/Coding_For_Web/blob/main/Sounds/Better.mp3"
         }
       ]
 ]
