@@ -1,0 +1,910 @@
+html {
+    font-family: 'Mollen Personal Use';
+    font-weight: bold;
+    font-style: normal;
+    padding: 20px;
+}
+@font-face  {
+    font-family: 'Mollen Personal Use';
+    src: url('assets/fonts/MollenPersonalUse-BoldCond.ttf') format('truetype'),
+         url('assets/fonts/MollenPersonalUse-BoldCond.woff') format('woff'),
+         url('assets/fonts/MollenPersonalUse-BoldCond.woff2') format('woff2');
+    font-style: normal;
+    font-weight: bold;
+}
+
+@font-face  {
+    font-family: 'Mollen Personal Use';
+    src: url('assets/fonts/MollenPersonalUse-Condensed.ttf') format('truetype'),
+         url('assets/fonts/MollenPersonalUse-Condensed.woff') format('woff'),
+         url('assets/fonts/MollenPersonalUse-Condensed.woff2') format('woff2');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face  {
+    font-family: '7surendra';
+    src: url('assets/fonts/7surendra\ Regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Brush";
+    src: url('assets/fonts/Brush.ttf') format('truetype'),
+         url('assets/fonts/Brush.woff') format('woff'),
+         url('assets/fonts/Brush.woff2') format('woff2');
+}
+
+.body{
+    border: 10px solid #a9486d;
+}
+
+header{
+    display: flex;
+    padding: 10px;
+    background-color: #baa76d;
+    height: 120px;
+    border-bottom: 3px solid #a9486d;
+}
+
+#logo-container{
+    margin-top: -10px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: 0px;
+}
+
+header h1{
+    margin-top: 10px;
+    font-size: 105px;
+    color: #fa0a3a;
+}
+
+    #logo-container img{
+        height: 90px;
+    }
+
+    .word1{
+        font-size: 10px;
+        margin-top: -6px;
+    }
+
+    .word2{
+        font-size: 15px;
+        margin-top: -2px;
+    }
+
+    #gallery{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .letter-container{
+        width: 23.945%;
+        border: 3px solid #a9486d;
+        padding: 5px;
+    }
+
+    .letter-container div{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .depic p{
+        font-size: 250px;
+        margin-top: -20px;
+        font-weight: normal;
+    }
+
+    .object{
+        width: auto;
+        height: 220px;
+        margin-left: 25px;
+    }
+
+    .descrip{
+        margin-top: -320px;
+        margin-left: 10px;
+        align-items: center;
+    }
+
+    .letter{
+        font-size: 60px;
+    }
+
+    .object_name{
+        font-size: 40px;
+    }
+
+    .hindi{
+        font: '7surendra';
+        font-size: 15px;
+    }
+
+    .letter-a .depic p {
+        color: #466d48; 
+    }
+
+    .letter-a .letter{
+        color: #466d48;
+    }
+
+    .letter-b .depic p {
+        color: #5984af; 
+    }
+
+    .letter-b .letter{
+        color: #5984af;
+    }
+
+    .letter-b img{
+        margin-left: 0px;
+    }
+
+    .letter-c .depic p {
+        color: #a74357; 
+    }
+
+    .letter-c .letter{
+        color: #a74357;
+    }
+
+    .letter-c img{
+        margin-left: -10px;
+    }
+
+    .letter-d .depic p {
+        color: #8d3f67; 
+    }
+
+    .letter-d .letter{
+        color: #8d3f67;
+    }
+
+    .letter-d img{
+        margin-top: 30px;
+        margin-left: -10px;
+        height: 200px;
+    }
+
+    .letter-e .depic p {
+        color: #5984af; 
+    }
+
+    .letter-e .letter{
+        color: #5984af;
+    }
+
+    .letter-e img{
+        margin-left: 0px;
+    }
+
+    .letter-f .depic p {
+        color: #8d3f67; 
+    }
+
+    .letter-f .letter{
+        color: #8d3f67;
+    }
+
+    .letter-f img{
+        margin-left: -15px;
+    }
+
+    .letter-g .depic p {
+        color: #b25780; 
+    }
+
+    .letter-g .letter{
+        color: #b25780;
+    }
+
+    .letter-g img{
+        margin-left: -15px;
+    }
+
+    .letter-h .depic p {
+        color: #466d48; 
+    }
+
+    .letter-h .letter{
+        color: #466d48;
+    }
+
+    .letter-h img{
+        margin-left: -15px;
+    }
+
+    .letter-i .depic p {
+        color: #466d48; 
+    }
+
+    .letter-i .letter{
+        color: #466d48;
+    }
+
+    .letter-i img{
+        margin-left: 20px;
+    }
+
+    .letter-j .depic p {
+        color: #b25780; 
+    }
+
+    .letter-j .letter{
+        color: #b25780;
+    }
+
+    .letter-j img{
+        margin-left: -15px;
+    }
+
+    .letter-k .depic p {
+        color: #a74357; 
+    }
+
+    .letter-k .letter{
+        color: #a74357;
+    }
+
+    .letter-k img{
+        margin-left: 0px;
+    }
+
+    .letter-l .depic p {
+        color: #5984af; 
+    }
+
+    .letter-l .letter{
+        color: #5984af;
+    }
+
+    .letter-l img{
+        margin-left: -10px;
+    }
+
+    .letter-m .depic p {
+        color: #b25780; 
+    }
+
+    .letter-m .letter{
+        color: #b25780;
+    }
+
+    .letter-m img{
+        height: 200px;
+        margin-top: 15px;
+        margin-left: -20px;
+    }
+
+    .letter-n .depic p {
+        color: #466d48; 
+    }
+
+    .letter-n .letter{
+        color: #466d48;
+    }
+
+    .letter-n img{
+        margin-left: -15px;
+    }
+
+    .letter-o .depic p {
+        color: #5984af; 
+    }
+
+    .letter-o .letter{
+        color: #5984af;
+    }
+
+    .letter-o img{
+        margin-left: 0px;
+    }
+
+    .letter-p .depic p {
+        color: #b25780; 
+    }
+
+    .letter-p .letter{
+        color: #b25780;
+    }
+
+    .letter-p img{
+        height: 200px;
+        margin-top: 15px;
+        margin-left: 0px;
+    }
+
+    .letter-q .depic p {
+        color: #466d48; 
+    }
+
+    .letter-q .letter{
+        color: #466d48;
+    }
+
+    .letter-q img{
+        margin-left: 0px;
+    }
+
+    .letter-r .depic p {
+        color: #b25780; 
+    }
+
+    .letter-r .letter{
+        color: #b25780;
+    }
+
+    .letter-r img{
+        margin-left: 0px;
+    }
+
+    .letter-s .depic p {
+        color: #a74357; 
+    }
+
+    .letter-s .letter{
+        color: #a74357;
+    }
+
+    .letter-s img{
+        margin-left: 0px;
+    }
+
+    .letter-t .depic p {
+        color: #5984af; 
+    }
+
+    .letter-t .letter{
+        color: #5984af;
+    }
+
+    .letter-t img{
+        height: 200px;
+        margin-left: -40px;
+    }
+
+    .letter-u,
+    .letter-v,
+    .letter-w,
+    .letter-x,
+    .letter-y,
+    .letter-z{
+        width: 32.28%;
+    }
+    .letter-u .depic p {
+        color: #5984af; 
+    }
+
+    .letter-u .letter{
+        color: #5984af;
+    }
+
+    .letter-u img{
+        margin-left: 40px;
+    }
+
+    .letter-v .depic p {
+        color: #466d48; 
+    }
+
+    .letter-v .letter{
+        color: #466d48;
+    }
+
+    .letter-v img{
+        margin-left: 40px;
+    }
+
+    .letter-w .depic p {
+        color: #8d3f67; 
+    }
+
+    .letter-w .letter{
+        color: #8d3f67;
+    }
+
+    .letter-w img{
+        margin-left: 40px;
+    }
+
+    .letter-x .depic p {
+        color: #466d48; 
+    }
+
+    .letter-x .letter{
+        color: #466d48;
+    }
+
+    .letter-x img{
+        margin-left: 20px;
+    }
+
+    .letter-y .depic p {
+        color: #a74357; 
+    }
+
+    .letter-y .letter{
+        color: #a74357;
+    }
+
+    .letter-y img{
+        margin-left: 50px;
+    }
+
+    .letter-z .depic p {
+        color: #5984af; 
+    }
+
+    .letter-z .letter{
+        color: #5984af;
+    }
+
+    .letter-z img{
+        margin-left: 50px;
+    }
+
+    #letter-display{
+        margin: 0;
+        font-family: 'Brush';
+        text-align: center;
+        font-size: 54px;
+        width: 100%;
+    }
+
+    #letter-display p{
+        border: 3px solid #a9486d;
+        background-color: #e5f71e;
+        color: #2f8dec;
+    }
+
+    .uppercase{
+        margin: 0px;
+    }
+
+    .lowercase{
+        margin: 0px;
+        letter-spacing: 9px;
+        padding: 3px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    footer{
+        display: flex;
+        justify-content: space-between;
+        padding: 0 10px;
+        background-color: #a9486d;
+        text-align: center; 
+        font-size: 1.5em;
+        color: #fff;
+    }
+
+    footer p{
+        position: relative;
+        top: 5px;
+    }
+
+    .Email{  
+        font-size: 20px;
+        margin: auto;
+        margin-right: 5px;
+    }
+
+    .price{
+        text-align: right;
+        margin-top: 5px;
+        margin-right: 20px;
+        font-size: 25px;
+    }
+
+
+    
+@media screen and (min-width: 900px) and (max-width: 1024px) {
+    header{
+        height: 150px;
+        display: flex;
+        padding: 10px;
+        background-color: #baa76d;
+        border-bottom: 3px solid #a9486d;
+    }
+
+    #logo-container{
+        margin-top: -10px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: 0px;
+    }
+    
+    #logo-container img{
+        height: 70px;
+    }
+
+    header h1{
+        margin-top: 10px;
+        font-size: 60px;
+        color: #fa0a3a;
+    }
+
+    .word1{
+        font-size: 10px;
+        margin-top: -6px;
+
+    }
+    
+    .word2{
+        font-size: 15px;
+        margin-top: -12px;
+    }
+
+    #gallery{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 0px;
+    }
+    
+    .letter-container{
+        flex: 1;
+        border: inset 5px solid #a9486d;
+        padding: auto;
+        margin: 0px;
+        height: 200px;
+    }
+    
+    .letter-container div{
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .descrip{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin-left: 0%;
+        padding-right: 5px;
+    }
+
+
+
+    .depic p:nth-of-type(1){
+        font-size: 160px;
+        margin-top: -20px;
+        margin-bottom: 200px;
+        font-weight: normal;
+        flex: 1;
+    }
+    
+    .object{
+        position: relative;
+        max-width:200px;
+        height:150px;
+        top: 0px;
+    }
+
+    .letter{
+        position: relative;
+        top: 50px;
+        left: 15px;
+        font-size: 50px;
+    }
+
+    .letter-d img{
+        margin-top: 10px;
+        margin-left: -5px;
+        height: 140px;
+        width: auto;
+    }
+    
+    .letter-m img{
+        height: 140px;
+        width: auto;
+        margin-top: 10px;
+        margin-left: -10px;
+    }
+    
+    
+    .letter-n img{
+        margin-left: 1px;
+    }
+
+    .letter-p img{
+        height: 150px;
+        width: auto;
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+
+    .letter-t img{
+        height: 130px;
+        width: auto;
+        margin-left: -20px;
+    }
+
+    .letter-u img{
+        margin-left: -5px;
+    }
+
+    .descrip{
+        position: relative;
+        width: 100%;
+        top: 100px;
+        align-items: baseline;
+        margin-right: 0%;
+    }
+
+    .letter{
+        font-size: 45px;
+        left: 0;
+        top: 0;
+        margin-right: 20px;
+    }
+
+    .object_name{
+        font-size: 30px;
+    }
+
+    .hindi{
+        font-size: 10px;
+    }
+
+    .uppercase{
+        font-size: 25px;
+        letter-spacing: 1.4px;
+    }
+
+    .lowercase{
+        font-size: 25px;
+        letter-spacing: 5.5px;
+    }
+
+    footer{
+        font-size: 12px;
+    }
+
+    .Email{
+        font-size: 10px;
+    }
+
+    .price{
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 370px) and (max-width: 900px) {
+    
+    html{
+        padding: 0px;
+    }
+    
+    header{
+        height: 150px;
+        text-align: left;
+        display: flex;
+        padding: 10px;
+        background-color: #baa76d;
+        border-bottom: 3px solid #a9486d;
+    }
+
+    #logo-container{
+        margin-top: 15px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: 0px;
+    }
+    
+    #logo-container img{
+        height: 70px;
+    }
+
+    header h1{
+        margin-top: 10px;
+        font-size: 40px;
+        color: #fa0a3a;
+    }
+
+    .word1{
+        font-size: 10px;
+        margin-top: -6px;
+        ;
+    }
+    
+    .word2{
+        font-size: 15px;
+        margin-top: -12px;
+    }
+
+    #gallery{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        padding: 0px;
+        flex-direction: row;
+        column-count: 2;
+
+    }
+    
+    .letter-container{
+        width: 44.3%;
+        border: 2px solid #a9486d;
+        padding: 10px;
+        margin: 0px;
+        height: 200px;
+    }
+    
+    .letter-container div{
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .descrip{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin-left: 0%;
+        padding-right: 5px;
+        position: relative;
+        gap: 20px;
+        top: 20px;
+        
+    }
+
+
+ .letter-e .descrip{
+        gap: 10px;
+        top: 10px;
+    }
+
+    .letter-i .descrip{
+        gap: 10px;
+        top: 10px;
+    }
+
+    .letter-t .descrip{
+        gap: 1px;
+        top: 20px;
+    }
+
+    .letter-u .descrip{
+        gap: 5px;
+        top: 12px;
+    }
+
+    .letter-x .descrip{
+        gap: 0px;
+        top: 10px;
+    }
+
+    .depic p:nth-of-type(1){
+        font-size: 120px;
+        margin-top: -20px;
+        margin-bottom: 280px;
+        font-weight: normal;
+        flex: 1;
+    }
+    
+    .object{
+        position: relative;
+        max-width:100px;
+        height:100px;
+        top: 0px;
+    }
+
+    .letter{
+        position: relative;
+        
+        left: 15px;
+        font-size: 20px;
+    }
+
+    .letter-a img{
+        margin-left: 0;
+    }
+
+    .letter-c img{
+        margin-left: 0;
+    }
+
+    .letter-d img{
+        margin-top: 10px;
+        margin-left: -5px;
+        height: 100px;
+        width: auto;
+    }
+    
+    .letter-m img{
+        height: 90px;
+        width: auto;
+        margin-top: 0px;
+        margin-left: -8px;
+    }
+    
+    
+    .letter-n img{
+        margin-left: -5px;
+    }
+
+    .letter-p img{
+        height: 100px;
+        width: auto;
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+
+    .letter-t img{
+        height: 100px;
+        width: auto;
+        margin-left: -20px;
+    }
+
+    .letter-u img{
+        margin-left: -5px;
+    }
+
+    .letter-v img{
+        margin-left: -5px;
+    }
+
+    .letter-w img{
+        height: 85px;
+        width: auto;
+        margin-left: -10px;
+    }
+
+    .letter-x img{
+        margin-left: -5px;
+    }
+
+    .letter-y img{
+        margin-left: -5px;
+    }
+
+    .letter-z img{
+        margin-left: -5px;
+    }
+
+    
+
+    .letter{
+        font-size: 45px;
+        left: 0;
+        top: 0;
+        margin-right: 20px;
+    }
+
+    .object_name{
+        font-size: 30px;
+    }
+
+    .hindi{
+        font-size: 10px;
+    }
+
+    .uppercase{
+        font-size: 20px;
+        letter-spacing: 2.5px;
+    }
+
+    .lowercase{
+        font-size: 20px;
+        letter-spacing: 5.8px;
+    }
+
+    footer p{
+        font-size: 10px;
+        text-align: left;
+    }
+
+    .Email{
+        font-size: 8px;
+        text-align: right;
+    }
+
+    .price{
+        font-size: 15px;
+    }
+
+           
+}

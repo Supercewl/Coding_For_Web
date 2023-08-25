@@ -1,0 +1,420 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Space+Grotesk:wght@500&display=swap');
+
+@font-face {
+  font-family:'Space';
+  src: url('/assets/fonts/galactico-basic-webfont.eot');
+  src: url('/assets/fonts/galactico-basic-webfont.woff2') format('woff2'),
+       url('/assets/fonts/galactico-basic-webfont.woff') format('woff'),
+       url('/assets/fonts/galactico-basic-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.overlay{
+    z-index: 111;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.466);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container{
+    z-index: 222;
+    display: flex;
+    position: relative;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900');
+
+body{
+	font-family: 'Poppins', sans-serif;
+	font-weight: 300;
+	font-size: 15px;
+	line-height: 1.7;
+	color: #c4c3ca;
+	background-color: #2a2b38;
+    background-image: url('/assets/stars.gif');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 1920px;
+    overflow: hidden;
+}
+a {
+	cursor: pointer;
+  transition: all 200ms linear;
+}
+a:hover {
+	text-decoration: none;
+}
+.link {
+  color: #c4c3ca;
+}
+.link:hover {
+  color: #ffeba7;
+}
+p {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.7;
+}
+h4 {
+    font-size: 50px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+h6 span:nth-of-type(1){
+    bottom: 30px;
+    padding: 0 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 20px;
+    position: relative;
+    font-family: 'Space';
+}
+
+h6 span{
+  bottom: 30px;
+  padding: 0 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 20px;
+  position: relative;
+}
+
+.section{
+  position: relative;
+  width: 100%;
+  display: block;
+  margin-top: 50px;
+}
+.full-height{
+  min-height: 100vh;
+}
+[type="checkbox"]:checked,
+[type="checkbox"]:not(:checked){
+  position: absolute;
+  left: -9999px;
+}
+.checkbox:checked + label,
+.checkbox:not(:checked) + label{
+  position: relative;
+  display: block;
+  text-align: center;
+  width: 60px;
+  height: 16px;
+  border-radius: 8px;
+  padding: 0;
+  margin: 10px auto;
+  cursor: pointer;
+  background-color: #fd3a59;
+}
+.checkbox:checked + label:before,
+.checkbox:not(:checked) + label:before{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  color: #ececec;
+  background-color: #0f0f0f;
+  box-shadow:0px 0px 15px 1px #fd3a59;
+  font-family: 'unicons';
+  content: '\eb4f';
+  z-index: 20;
+  top: -10px;
+  left: -10px;
+  line-height: 36px;
+  text-align: center;
+  align-items: center;
+  font-size: 24px;
+  transition: all 0.5s ease;
+}
+.checkbox:checked + label:before {
+  transform: translateX(44px) rotate(-270deg);
+}
+
+
+.card-3d-wrap {
+  position: relative;
+  width: 440px;
+  max-width: 100%;
+  height: 400px;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  perspective: 800px;
+  margin-top: 60px;
+}
+.card-3d-wrapper {
+  width: 100%;
+  height: 100%;
+  position:absolute;    
+  top: 0;
+  left: 0;  
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  transition: all 600ms ease-out; 
+}
+.card-front, .card-back {
+  width: 100%;
+  height: 100%;
+  background-color: #020202;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: absolute;
+  border-radius: 6px;
+  box-shadow:0px 0px 15px 10px #fd3a59;
+  left: 0;
+  top: 0;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.card-front{
+  background-image: url('/assets/mus.gif');
+}
+
+
+.card-back {
+  transform: rotateY(180deg);
+}
+.checkbox:checked ~ .card-3d-wrap .card-3d-wrapper {
+  transform: rotateY(180deg);
+}
+.center-wrap{
+  position: absolute;
+  width: 100%;
+  padding: 0px;
+  top: 50%;
+  left: 0;
+  transform: translate3d(0, -50%, 35px) perspective(100px);
+  z-index: 20;
+  display: block;
+}
+
+.logo {
+	position: absolute;
+	top: 30px;
+	right: 30px;
+	display: block;
+	z-index: 100;
+	transition: all 250ms linear;
+}
+.logo img {
+	height: 26px;
+	width: auto;
+	display: block;
+}
+
+.controls{
+    width: 350px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+#seekbarContainer {
+  display: flex;
+  width: 100%;
+  border-radius: 5px;
+  overflow: hidden;
+  height: 10px;
+}
+
+
+#seekbar {
+  width: 100%;
+  height: 10px;
+  appearance: none;
+  border: none;
+  background-color: #eee;
+  cursor: pointer;
+}
+
+#seekbar::-webkit-progress-value {
+  background-color: #fd3a59;
+  border-radius: 5px;
+}
+
+#seekbar::-webkit-slider-thumb {
+  appearance: none;
+  width: 10px;
+  height: 20px;
+  background-color: #fd3a59;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#seekbar::-webkit-slider-runnable-track {
+  display: none;
+}
+
+#timers {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.btn_container{
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+.controls button{
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  border: none;
+  color: white;
+  background-color: #0e0e0e;
+  box-shadow:0px 0px 15px 2px #fd3a59;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: .5s ease;
+  margin-bottom: 20px;
+  text-transform: capitalize;
+}
+
+.controls button:active{
+  background-color: #fd3a59;
+  box-shadow:0px 0px 15px 2px #dbdbdb;
+}
+
+.album-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.album_cover{
+  width: 120px;
+  height: 120px;
+  border-radius: 10px;
+  box-shadow:0px 0px 15px 2px #fd3a59;
+}
+
+.label{
+  color: #eee;
+  font-weight: 800;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  top: 20px;
+  position: relative;
+  background-color: #000000a9;
+  padding: 0px 20px;
+  border-radius: 5px;
+}
+
+.fin{
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  box-shadow:0px 0px 15px 10px #fd3a59;
+  transition: box-shadow 1s ease-in-out;
+}
+
+
+@media screen and (max-width: 667px) and (min-width: 300px) {
+  .card-3d-wrap {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    height: 400px;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    perspective: 800px;
+    margin-top: 60px;
+  }
+
+  .controls button{
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    border: none;
+    color: white;
+    background-color: #0e0e0e;
+    box-shadow:0px 0px 15px 2px #fd3a59;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: .5s ease;
+    margin-bottom: 40px;
+    text-transform: capitalize;
+  }
+  
+  .controls{
+    width: 250px;
+    margin: auto;
+    margin-top: 20px;
+  }
+
+  #seekbarContainer {
+    display: flex;
+    width: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 10px;
+  }
+
+
+  #seekbar {
+    width: 100%;
+    height: 10px;
+    appearance: none;
+    border: none;
+    background-color: #eee;
+    cursor: pointer;
+  }
+
+  h6 span:nth-of-type(1){
+    bottom: 30px;
+    padding: 0 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 22px;
+    position: relative;
+    font-family: 'Space';
+  }
+
+  h6 span{
+    bottom: 30px;
+    padding: 0 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 22px;
+    position: relative;
+  }
+
+  .label{
+    font-size: 16px;
+    top: 20px;
+    position: relative;
+    background-color: #000000a9;
+    padding: 0px 20px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+}  

@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box1{
+    background: url('/assets/frog.gif');
+    background-size: cover;
+    display: none;
+    height: 800px;
+    width: 500px;
+    margin: 50px;
+    overflow: hidden;
+    position: relative;
+}
+
+.box1 img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: fit-content;
+    height: fit-content;
+    object-fit: cover;
+    pointer-events: none;
+    
+}
+  
+
+
+.box2{
+    background-color: rgb(20, 20, 20);
+    position: absolute;
+    display: none;
+    height: 100px;
+    width: 100%;
+    bottom: 0;
+}
+
+.box1 .box2{
+    display: none;
+}
+
+.btn-container{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    position: absolute;
+    top: 0;
+    right: 20px;
+    margin: 20px;
+}
+
+button {
+    text-decoration: none;
+    border: 1px solid #fd3a59;
+    position: relative;
+    overflow: hidden;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    align-items: center;
+    text-align: center;
+    padding: 1rem 2rem;
+    color: #f4f4f4;
+    text-transform: uppercase;
+    text-decoration: none;
+    width: flex;
+    margin-top: 10px;
+    background-color: #020202c7;
+    box-shadow: inset 0px 0px 15px 10px #fd3a59;
+  }
+  
+  button:hover {
+    box-shadow: 0px 0px 15px 5px #fd3a59;
+    background-color: #020202;
+  }
+  
+  button:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      120deg,
+      transparent,
+      #fd3a59,
+      transparent
+    );
+    transition: all 650ms;
+}
+
+button:hover:before {
+  left: 100%;
+}
+
+.frame {
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    top: 50px;
+    left: 0; 
+    right: 0; 
+    margin: auto;
+    justify-content: center;
+    align-items: center; 
+  }
+  
+
+
+
+.closemenu {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    font-size: 20px;
+    color: aliceblue;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    box-shadow: inset 0px 0px 5px 5px #fd3a59;
+    overflow: hidden;
+}
+
+.closemenu:hover {
+    box-shadow: 0px 0px 15px 5px #fd3a59;
+    background-color: #020202;
+}
+
+.closemenu::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      120deg,
+      transparent,
+      #fd3a59,
+      transparent
+    );
+    transition: all 650ms;
+}
+
+.closemenu:hover:before {
+    left: 100%;
+  }
