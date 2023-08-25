@@ -337,6 +337,81 @@ h6 span{
   transition: box-shadow 1s ease-in-out;
 }
 
+.introOverlay{
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.781);
+  z-index: 999;
+  padding: 0;
+}
+
+.intro{
+  width: 50%;
+  text-align: justify;
+}
+
+.intro p{
+  font-size: 30px;
+  margin-bottom: 100px;
+}
+
+.intro .special-words{
+  font-weight: 900;
+  font-family: 'Space Grotesk';
+}
+
+.clx {
+  text-decoration: none;
+  border: 1px solid #fd3a59;
+  position: absolute;
+  top: 0;
+  right: 50px;
+  overflow: hidden;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  align-items: center;
+  text-align: center;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  color: #f4f4f4;
+  text-transform: uppercase;
+  text-decoration: none;
+  width: flex;
+  margin-top: 10px;
+  background-color: #020202c7;
+  box-shadow: inset 0px 0px 15px 10px #fd3a59;
+  cursor: pointer;
+}
+
+.clx:hover {
+  box-shadow: 0px 0px 15px 5px #fd3a59;
+  background-color: #020202;
+}
+
+.clx:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    #fd3a59,
+    transparent
+  );
+  transition: all 650ms;
+}
+
+.clx:hover:before {
+left: 100%;
+}
 
 @media screen and (max-width: 667px) and (min-width: 300px) {
   .card-3d-wrap {
@@ -416,5 +491,19 @@ h6 span{
     padding: 0px 20px;
     border-radius: 5px;
     margin-bottom: 10px;
+  }
+
+  .intro{
+    text-align: center;
+  }
+
+  .intro p{
+    font-size: 20px;
+    margin:100px 10px;
+  }
+  
+  .intro .special-words{
+    font-weight: 900;
+    font-family: 'Space Grotesk';
   }
 }  
