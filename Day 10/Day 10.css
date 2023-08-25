@@ -50,11 +50,11 @@ body{
 	line-height: 1.7;
 	color: #c4c3ca;
 	background-color: #2a2b38;
-    background-image: url('stars.gif');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 1920px;
-    overflow: hidden;
+  background-image: url('assets/stars.gif');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 1920px;
+  overflow: hidden;
 }
 a {
 	cursor: pointer;
@@ -137,7 +137,7 @@ h6 span{
   background-color: #0f0f0f;
   box-shadow:0px 0px 15px 1px #fd3a59;
   font-family: 'unicons';
-  content: '\eb4f';
+  content: '\ebaf';
   z-index: 20;
   top: -10px;
   left: -10px;
@@ -193,7 +193,7 @@ h6 span{
 }
 
 .card-front{
-  background-image: url('mus.gif');
+  background-image: url('assets/mus.gif');
 }
 
 
@@ -337,6 +337,7 @@ h6 span{
   transition: box-shadow 1s ease-in-out;
 }
 
+
 .introOverlay{
   position: absolute;
   width: 100%;
@@ -351,8 +352,17 @@ h6 span{
 }
 
 .intro{
-  width: 50%;
+  width: 100%;
   text-align: justify;
+  padding: 20%;
+}
+
+.intro h1{
+  font-size: 40px;
+  text-align: center;
+  text-decoration: underline;
+  text-underline-offset: 10px;
+  margin-bottom: 20px;
 }
 
 .intro p{
@@ -413,7 +423,16 @@ h6 span{
 left: 100%;
 }
 
+
 @media screen and (max-width: 667px) and (min-width: 300px) {
+  body{
+    overflow-y: scroll;
+  }
+
+  body::-webkit-scrollbar{
+    display: none;
+  }
+
   .card-3d-wrap {
     position: relative;
     width: 100%;
@@ -495,15 +514,39 @@ left: 100%;
 
   .intro{
     text-align: center;
+    padding: 10%;
+  }
+
+  .intro h1{
+    font-size: 22px;
+    text-align: center;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    margin-bottom: 10px;
   }
 
   .intro p{
-    font-size: 20px;
-    margin:100px 10px;
+    font-size: 18px;
+    margin:0px;
   }
   
   .intro .special-words{
     font-weight: 900;
     font-family: 'Space Grotesk';
   }
+
+  .clx {
+    text-decoration: none;
+    width: fit-content;
+    max-width: 50px;
+    margin-top: 10px;
+    font-size: 15px;
+    top: -50px;
+    right: 10px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+  
 }  
