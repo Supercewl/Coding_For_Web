@@ -5,7 +5,7 @@
 }
 
 .box1{
-    background: url('/assets/frog.gif');
+    background: url('assets/frog.gif');
     background-size: cover;
     display: none;
     height: 800px;
