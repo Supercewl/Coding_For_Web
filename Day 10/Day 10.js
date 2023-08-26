@@ -1,6 +1,21 @@
 let music_data = [
     [
         {
+          img: "DPs/LR.png",
+          label: "Lovers Rock - TV Girl",
+          audio: "Sounds/Lock.mp3"
+        },
+        {
+          img: "DPs/CR.png",
+          label: "Crystals - Isolate.exe",
+          audio: "Sounds/Crysta.mp3"
+        },
+        {
+          img: "DPs/DR.png",
+          label: "Am I Dreaming - Metro Boomin",
+          audio: "Sounds/Dream.mp3"
+        },
+        {
           img: "DPs/SP.jpg",
           label: "C418 - Aria Math | Synthwave",
           audio: "Sounds/C418 - Aria Math (Synthwave).mp3"
