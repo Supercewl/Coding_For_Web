@@ -157,7 +157,7 @@ const animatedImage = document.getElementById("animatedImage");
         source.connect(analyser);
         analyser.connect(audioContext.destination);
 
-        analyser.fftSize = 256; // Adjust for higher resolution
+        analyser.fftSize = 4096; // Adjust for higher resolution
 
         const dataArray = new Uint8Array(analyser.frequencyBinCount);
 
